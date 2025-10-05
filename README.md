@@ -1,7 +1,7 @@
-# Project Title
+# Web Application Development Course
 
-A short description of my project.
+This repository contains all lab tasks completed as part of the Web Application Development (WAD) course.
 
 ## Features
-- Simple `index.html`
-- Documentation in `README.md`
+- Basic `index.html` page for each lab task
+- Styling using `style.css`
