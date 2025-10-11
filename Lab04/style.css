@@ -1,0 +1,92 @@
+body{
+    background-color:var(--bg); 
+    font-size: 25px;
+    font-style: "Poppins", "Segoe UI", sans-serif;
+    opacity:1;
+
+}
+:root{ /* root selector*/
+    --bg:rgb(230,207,169);
+}
+
+h2 { 
+    margin-bottom: 20px; 
+}
+p{
+    padding-top: 100px;
+    margin-top: 0;
+    text-indent:30px;   
+}
+div{
+    min-width:200px;
+    max-width:400px;
+    min-height:100px;
+    max-height:300px;
+    overflow:hidden; /*tried to use scroll but doen't look good*/
+    padding:10px;
+    box-sizing:border-box;
+    margin:2px;
+}
+
+#id1.class1{  /* Id along with other has more priority i.e.more Specified*/
+    color:rgb(154,63,63);
+}
+
+#id1{ /* Id selector*/
+    color:rgb(255, 192, 203);
+}
+
+h1{ /* Eelement Selector*/
+    color:rgb(107, 102, 103);
+}
+
+[title="hello"]{ /* Since class and attribute selector have same precedence so the 
+                 one which comes later will be preferred*/
+    color:red;
+}
+
+.myclass{ /* Class Selector*/
+     font-size: 30px;
+     color:rgb(154,63,63);
+}
+
+
+.divclass{
+    font-size: 30px;
+     color:rgb(154,63,63);
+}
+a:link{
+    color:blue;
+}
+
+a:hover{ /* Pseudo-class*/
+    color:red;
+}
+
+a:visited{
+    color:purple;
+}
+
+a:active{
+    color:green;
+}
+
+img[src$=".jpeg"]{  /* Attribute Selector*/
+   height:20vh;
+   box-shadow:5px 5px 5px grey;
+   border-style:double;
+   border-width:none;
+   border-color:black;
+   border-radius:0.5%;
+   
+}
+a{
+    display:block;
+}
+
+h1, h2, h3, h4, h5, h6, p {  /* Grouped Selectors*/
+    margin: 10px 0;
+}
+.Myclass{  /* Inheritance*/
+    color:black;
+}
