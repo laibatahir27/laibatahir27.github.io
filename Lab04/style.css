@@ -9,12 +9,7 @@ body{
     --bg:rgb(230,207,169);
 }
 
-h2 { 
-    margin-bottom: 20px; 
-}
 p{
-    padding-top: 100px;
-    margin-top: 0;
     text-indent:30px;   
 }
 div{
@@ -40,8 +35,7 @@ h1{ /* Eelement Selector*/
     color:rgb(107, 102, 103);
 }
 
-[title="hello"]{ /* Since class and attribute selector have same precedence so the 
-                 one which comes later will be preferred*/
+[title="hello"]{ /* Since class and attribute selector have same precedence so the                one which comes later will be preferred*/
     color:red;
 }
 
