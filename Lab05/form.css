@@ -24,14 +24,14 @@ body {
 .form-container p {
     margin-bottom: 15px;
 }
-
+/*Label*/
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     color: #555;
 }
-
+/*Text Area*/
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -61,6 +61,7 @@ textarea {
     resize: none;
 }
 
+/*Submit button*/
 input[type="submit"] {
     width: 100%;
     padding: 12px;
@@ -78,12 +79,12 @@ input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-
+/*button color changed when pressed*/
 input[type="submit"]:active {
     background-color: green;
 }
 
-
+/*Reset button*/
 input[type="reset"] {
     width: 100%;
     padding: 12px;
@@ -100,6 +101,7 @@ input[type="reset"]:hover {
     background-color: #0056b3;
 }
 
+/*button color changed when pressed*/
 input[type="reset"]:active {
     background-color: red;
 }
