@@ -1,0 +1,155 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f8fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.4em;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-top: 8px;
+    color: #e0e0e0;
+}
+
+section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    color: #003366;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #003366;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+.about-section p {
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 1.05em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;  
+    text-align: center;
+    font-size: 1em;
+}
+
+th, td {
+    border: 1px solid #003366;  
+    padding: 12px 10px;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f6fc;
+}
+
+tr:hover {
+    background-color: #e6f0ff;
+    transition: 0.3s ease;
+}
+
+.table-footer {
+  text-align: center;
+  font-style: italic;
+  color: #333;
+  background-color: #f8f9fa;
+  border-top: 2px solid #ccc;
+  padding: 8px;
+}
+
+.skills-section ul,
+.certifications-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-section li,
+.certifications-section li {
+    background: #f0f4ff;
+    margin: 10px 0;
+    padding: 12px 18px;
+    border-left: 5px solid #003366; 
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.skills-section li:hover,
+.certifications-section li:hover {
+    background: #e0ebff;
+    transform: translateX(5px);
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 50px;
+    font-size: 0.95em;
+    letter-spacing: 0.5px;
+}
+
+.contact-section ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.contact-section li {
+    margin: 10px 0;
+    font-size: 1.05em;
+}
+
+.contact-section a{
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0055cc;
+}
+
+a:visited {
+    text-decoration: underline;
+    color: purple;
+}
+
+a:active {
+    text-decoration: underline;
+    color: red;
+}
+
