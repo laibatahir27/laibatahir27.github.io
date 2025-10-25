@@ -1,0 +1,158 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f8fa;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #00264d;
+    padding: 12px 0;
+    display: flex; /*Flexbox*/
+    justify-content: center; /* justify-content*/
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.05em;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #003366;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.4em;
+}
+
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #003366;
+    padding: 10px;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+}
+
+/* Flex Cards */
+.card-section {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap; /*wrap used for overflowed content*/
+}
+
+.card {
+    width: 240px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Card List */
+.card ul {
+    list-style: none; /*to maqe sure bullets not shown*/
+    margin: 0;
+    padding: 0;
+}
+
+.card ul li {
+    font-size: 14px;
+    padding: 6px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.card ul li:last-child {
+    border-bottom: none;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: left;
+}
+
+.contact-section ul {
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+    font-size: 0.95em;
+}
+
+.about-img {
+    float: left; /*Float property*/
+    width: 120px;
+    height: 120px;
+    margin: 0 15px 10px 0;
+    border-radius: 10px;
+    
+}
+
