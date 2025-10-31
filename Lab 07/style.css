@@ -231,6 +231,9 @@ footer {
     .card-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .education-section table {
+        width: 70%;           /* slightly narrower for better design */
+    }
 }
 
 /* for Desktops */
@@ -242,5 +245,8 @@ footer {
             "contact contact contact"
             "footer footer footer";
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .education-section table {
+        width: 90%;           /* perfect size for wide displays */
     }
 }
