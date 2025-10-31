@@ -1,0 +1,246 @@
+/* body tag */ 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f8fa;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #00264d;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.05em;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #003366;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 25px 15px; 
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin-bottom: 5px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*3 equal columns*/
+    gap: 25px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* Since 3 columns so 4 grid lines*/
+.about-section {
+    grid-column: 1 / 2; /* using grid-column-start and end property*/
+}
+
+.education-section {
+    grid-column: 2 / 4;
+}
+
+.card-section {
+    grid-column: 1 / 4;
+}
+
+.contact-section {
+    grid-column: 1 / 4;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* About Section */
+.about-section h2 {
+    text-align: center;
+}
+
+.about-img {
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin: 0 15px 10px 0;
+    border-radius: 10px;
+}
+
+/* Table (Education) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #003366;
+    padding: 10px;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+}
+
+/* Card Section */
+.card-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* autfit */
+    gap: 25px;
+    align-items: stretch;
+}
+
+.card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    text-align: center;
+    align-self: start;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card ul li {
+    font-size: 14px;
+    padding: 6px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.card ul li:last-child {
+    border-bottom: none;
+}
+
+/* Contact Section */
+.contact-section h2 {
+    text-align: center;
+}
+
+.contact-section ul {
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+    font-size: 0.95em;
+    border-top: 2px solid #00264d;
+}
+
+/* for Mobile devices */
+@media (max-width: 480px) {
+    body {
+        grid-template-areas:
+            "header"
+            "about"
+            "education"
+            "skills"
+            "contact"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .about-img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* for Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        grid-template-areas:
+            "header header"
+            "about education"
+            "skills skills"
+            "contact contact"
+            "footer footer";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* for Desktops */
+@media (min-width: 769px) {
+    body {
+        grid-template-areas:
+            "header header header"
+            "about education skills"
+            "contact contact contact"
+            "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

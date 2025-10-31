@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+  <!-- Fixed header -->
+  <header class="fixed-header">
+    <h2>Contact Form Page</h2>
+  </header>
+
+  <div class="form-container">
+
+    <!-- Figure with figcaption -->
+    <figure class="form-figure">
+      <img src="https://cdn-icons-png.flaticon.com/512/295/295128.png" alt="Contact Icon">
+      <figcaption>Get in touch with me through this form!</figcaption>
+    </figure>
+
+    <form action="#" method="get">
+      <fieldset>
+        <legend><h3>Contact Form</h3></legend>
+
+        <p>
+          <label for="username">Username / Full Name:</label>
+          <input type="text" id="username" name="username" placeholder="Enter your full name" required>
+        </p>
+
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </p>
+
+        <p>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"
+                 pattern="[0-9]{10,15}" title="Please enter only numbers (10-15 digits)" required>
+        </p>
+
+        <p>
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="10" max="100">
+        </p>
+
+        <p>
+          <label>Gender:</label>
+          <div class="radio-class">
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+          </div>
+        </p>
+
+        <p>
+          <label>Skills / Interests:</label>
+          <div class="checkbox-class">
+            <input type="checkbox" id="cplus" name="skills" value="C++">
+            <label for="cplus">C++</label>
+            <input type="checkbox" id="python" name="skills" value="Python">
+            <label for="python">Python</label>
+            <input type="checkbox" id="webdev" name="skills" value="Web Development">
+            <label for="webdev">Web Development</label>
+          </div>
+        </p>
+
+        <p>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+        </p>
+
+        <p class="btn-container">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </p>
+
+      </fieldset>
+    </form>
+  </div>
+
+</body>
+</html>
